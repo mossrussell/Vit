@@ -113,3 +113,8 @@ table a{
 a:hover{
   background-color: red;
 }
+
+@media screen and (max-width: 1000px) {
+table{
+  width:100%; 
+}

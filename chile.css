@@ -69,12 +69,10 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
-#background-image{
-    background-image: url(images/lapostolle.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+
+
+
+
 #navigation{
     width: 50%;
     margin-bottom: 3px;

@@ -3,6 +3,8 @@
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
+    position: fixed;
+    z-index: 3;
   }
   
   /* Links inside the navbar */
@@ -13,12 +15,15 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
   
   /* The dropdown container */
   .dropdown {
     float: left;
     overflow: hidden;
+    
+    
   }
   
   /* Dropdown button */
@@ -36,12 +41,14 @@
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
+    
   }
   
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -52,6 +59,7 @@
   .dropdown-content a {
     float: none;
     color: black;
+   
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -67,22 +75,20 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
-#background-image{
-    background-image: url(images/boots.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background: cover;
-    background-size: 100%; 
-    margin-bottom: 0;
-    height: 1500px;
-    width: 100%
-
-}
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1; 
+  }
 
 #layer{
   background-color: rgba(248, 247, 216, 0.7);
-    position: relative;
-    top: 1px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -108,5 +114,3 @@
   #welcome h2{
     font-family: Arial, Helvetica, sans-serif; 
   }
-
- 
